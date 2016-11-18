@@ -5,7 +5,7 @@ use JSON;
 use Moose::Util qw( apply_all_roles );
 use namespace::autoclean;
 
-has type => ( is => 'ro', isa => 'Str' );
+has type => ( is => 'rw', isa => 'Str' );
 
 has data => ( is => 'rw', isa => 'HashRef', required => 1 );
 
