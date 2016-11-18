@@ -32,7 +32,6 @@ sub BUILD {
 
     my $role = ($type =~ /::/) ? $type : 'Queue::Parasite::Message::' . $type;
 
-    print "Applying role $role\n";
     apply_all_roles( $self, $role );
 
     $self->parse;
